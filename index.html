@@ -5,139 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultural & Historical Egypt Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
+    <header>
+        <nav class="header navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">
                     <img src="imgs/pharaoh.png" alt="Soleya Egypt Logo">
-                </div>
-                <nav class="nav-menu" id="navMenu">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#tours">Tours</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header-actions">
-                    <button class="menu-toggle" id="menuToggle">
+                </a>
+
+                <div class="d-flex align-items-center order-lg-last">
+                    <a href="#plan" class="btn-primary d-none d-lg-inline-block me-3">Start Planning</a>
+
+                    <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                        aria-label="Toggle navigation" id="menuToggle">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
-                    <a href="#plan" class="btn-primary">Start Planning</a>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#plan" class="btn-primary d-lg-none mt-3">Start Planning</a>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Travel Through Stories, Not Just Places</h1>
-                <p class="hero-subtitle">Our immersive Egypt tours connect you with history, culture, and the people who
-                    bring them to life.</p>
-                <a href="#explore" class="btn-outline">Explore Egypt Now</a>
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Travel Through Stories, Not Just Places</h1>
+                        <p class="hero-subtitle">Our immersive Egypt tours connect you with history, culture, and the
+                            people who
+                            bring them to life.</p>
+                        <a href="#explore" class="btn-outline">Explore Egypt Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="imgs/Historical Tours.png" alt="Historical Tours">
+            <div class="row features-grid-row">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="feature-card w-100">
+                        <div class="feature-icon">
+                            <img src="imgs/Historical Tours.png" alt="Historical Tours">
+                        </div>
+                        <h3>Historical Tours</h3>
+                        <p>Discover ancient wonders and walk through millennia of history</p>
                     </div>
-                    <h3>Historical Tours</h3>
-                    <p>Discover ancient wonders and walk through millennia of history</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="imgs/Cultural Experience.png" alt="Cultural Experience">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="feature-card w-100">
+                        <div class="feature-icon">
+                            <img src="imgs/Cultural Experience.png" alt="Cultural Experience">
+                        </div>
+                        <h3>Cultural Experience</h3>
+                        <p>Immerse yourself in authentic Egyptian culture and traditions</p>
                     </div>
-                    <h3>Cultural Experience</h3>
-                    <p>Immerse yourself in authentic Egyptian culture and traditions</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="imgs/expert guide.png" alt="Expert Guides">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="feature-card w-100">
+                        <div class="feature-icon">
+                            <img src="imgs/expert guide.png" alt="Expert Guides">
+                        </div>
+                        <h3>Expert Guides</h3>
+                        <p>Learn from passionate historians and local experts</p>
                     </div>
-                    <h3>Expert Guides</h3>
-                    <p>Learn from passionate historians and local experts</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">Discover the Wonders of Ancient Egypt</h2>
-                    <p>For over a decade, we've been crafting unforgettable journeys through Egypt's most iconic
-                        destinations. Our tours go beyond the typical tourist experience, offering deep dives into the
-                        rich tapestry of Egyptian history, culture, and daily life.</p>
-                    <p>From the majestic pyramids of Giza to the vibrant markets of Cairo, from the temples of Luxor to
-                        the serene waters of the Nile, every moment is designed to connect you with the soul of Egypt.
-                    </p>
-                    <a href="#tours" class="btn-primary">View Our Tours</a>
+            <div class="row about-content-row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2 class="section-title">Discover the Wonders of Ancient Egypt</h2>
+                        <p>For over a decade, we've been crafting unforgettable journeys through Egypt's most iconic
+                            destinations. Our tours go beyond the typical tourist experience, offering deep dives into
+                            the
+                            rich tapestry of Egyptian history, culture, and daily life.</p>
+                        <p>From the majestic pyramids of Giza to the vibrant markets of Cairo, from the temples of Luxor
+                            to
+                            the serene waters of the Nile, every moment is designed to connect you with the soul of
+                            Egypt.
+                        </p>
+                        <a href="#tours" class="btn-primary">View Our Tours</a>
+                    </div>
                 </div>
-                <div class="about-image">
-                    <img src="imgs/Sphinx and Pyramids.jpeg" alt="Sphinx and Pyramids">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="imgs/Sphinx and Pyramids.jpeg" alt="Sphinx and Pyramids" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Destinations Section -->
     <section class="destinations" id="destinations">
         <div class="container">
-            <h2 class="section-title center">Popular Destinations</h2>
-            <div class="destinations-grid">
-                <div class="destination-card">
-                    <div class="destination-image">
-                        <img src="imgs/Pyramids of Giza.jpeg" alt="Pyramids of Giza">
-                    </div>
-                    <div class="destination-info">
-                        <h3>Pyramids of Giza</h3>
-                        <p>Stand before the last remaining wonder of the ancient world</p>
-                    </div>
-                </div>
-                <div class="destination-card">
-                    <div class="destination-image">
-                        <img src="imgs/Luxor Temple.jpg" alt="Luxor Temple">
-                    </div>
-                    <div class="destination-info">
-                        <h3>Luxor Temple</h3>
-                        <p>Explore the magnificent temples of ancient Thebes</p>
+            <h2 class="section-title text-center mb-5">Popular Destinations</h2>
+            <div class="row destinations-grid-row">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="destination-card w-100">
+                        <div class="destination-image">
+                            <img src="imgs/Pyramids of Giza.jpeg" alt="Pyramids of Giza">
+                        </div>
+                        <div class="destination-info">
+                            <h3>Pyramids of Giza</h3>
+                            <p>Stand before the last remaining wonder of the ancient world</p>
+                        </div>
                     </div>
                 </div>
-                <div class="destination-card">
-                    <div class="destination-image">
-                        <img src="imgs/grand egyptian museum.jpg" alt="Grand Egyptian Museum">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="destination-card w-100">
+                        <div class="destination-image">
+                            <img src="imgs/Luxor Temple.jpg" alt="Luxor Temple">
+                        </div>
+                        <div class="destination-info">
+                            <h3>Luxor Temple</h3>
+                            <p>Explore the magnificent temples of ancient Thebes</p>
+                        </div>
                     </div>
-                    <div class="destination-info">
-                        <h3>Grand Egyptian Museum</h3>
-                        <p>Witness the treasures of Tutankhamun and pharaohs</p>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="destination-card w-100">
+                        <div class="destination-image">
+                            <img src="imgs/grand egyptian museum.jpg" alt="Grand Egyptian Museum">
+                        </div>
+                        <div class="destination-info">
+                            <h3>Grand Egyptian Museum</h3>
+                            <p>Witness the treasures of Tutankhamun and pharaohs</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section" id="plan">
+    <section class="cta-section text-center" id="plan">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Start Your Egyptian Adventure?</h2>
@@ -147,30 +173,35 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img src="imgs/pharaoh.png" alt="Soleya Egypt Logo" class="footer-logo">
-                    <p>Creating unforgettable journeys through the heart of ancient Egypt</p>
+            <div class="row footer-content-row">
+                <div class="col-lg-6">
+                    <div class="footer-section">
+                        <img src="imgs/pharaoh.png" alt="Soleya Egypt Logo" class="footer-logo">
+                        <p>Creating unforgettable journeys through the heart of ancient Egypt</p>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#tours">Tours</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#tours">Tours</a></li>
+                            <li><a href="#destinations">Destinations</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>Email: info@egypt.com</li>
-                        <li>Phone: +20 123 456 7890</li>
-                        <li>Cairo, Egypt</li>
-                    </ul>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>Email: info@egypt.com</li>
+                            <li>Phone: +20 123 456 7890</li>
+                            <li>Cairo, Egypt</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -179,6 +210,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
